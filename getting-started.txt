@@ -22,6 +22,6 @@ Learned the basics of angular
 
 also doing the create components tutorial:
 ETA: 10 minutes
-
+ref: create-component-tutorial.txt
 
 
