@@ -1,0 +1,27 @@
+Components define areas of responsibility in the UI
+This allows you to reuse frontend components.
+
+A component consists of three things a class(js?), a template(html), component specific
+styles(css)
+
+Example:
+app-root is the first component to load and is responsible for loading other components
+app-top-bar the store name and checkout button
+app-product-list The product list
+app-product-alerts A component that contains the application's alerts
+
+
+Installation:
+Check you have a compatible version of node installed
+Install the latest angular version using npm install -g @angular/cli
+Configure your IDE to support angular for the best experience
+
+New to angular therefore chooses to do example/intro if hello world in angular,
+ETA 10 minutes
+Learned the basics of angular
+
+also doing the create components tutorial:
+ETA: 10 minutes
+
+
+

@@ -1,0 +1,56 @@
+Components are angular building blocks. Components contains:
+- code
+- html
+- css styling
+a component can contain other components
+
+In Angular components have metadata that define its properties:
+ selector: how it is referred to component in templates
+ standalone: to describe whether th component require NgModule
+ imports
+ template the components html layout
+ styleUrls: used to list the url of the css files that the
+ component uses in an array
+
+use this command to create a component:
+  ng generate component home --inline-template --skip-tests
+this will create a new component called home.
+
+.
+├── app.component.css
+├── app.component.ts
+└── home
+    ├── home.component.css
+    └── home.component.ts
+
+this is the created component:
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  imports: [],
+  template: `
+    <p>
+      home works!
+    </p>
+  `,
+  styleUrl: './home.component.css'
+})
+export class HomeComponent {
+
+}
+
+to include this component in another in this case AppComponent
+we need to add this import line in app.component.ts
+
+import { HomeComponent } from './home/home.component';
+
+you then need to update @Component imports field to include HomeComponent
+
+then alter the @Component template fields html to reference <app-home></app-home>
+
+Adding features to HomeComponent
+You just alter the home.component.ts and home.component.css
+
