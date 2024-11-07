@@ -1,3 +1,4 @@
+Angular: 
 Components define areas of responsibility in the UI
 This allows you to reuse frontend components.
 
@@ -24,3 +25,27 @@ Learned the basics of angular
 also doing the create components tutorial:
 ETA: 10 minutes
 ref: create-component-tutorial.txt
+
+React:
+React apps are made out of nesting components. A component is a piece of the UI that has its own
+logic and apperance. A component can be as small as a button, or as large as an entire page. 
+
+React components are in general Javascript functions that return markup. 
+For example 
+   function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+
+you can now nest that component (MyButton()) into another component
+react components always start with a capital letter. 
+
+The markup syntax is called jsx it is optional but it is common practise in react. 
+JSX is stricter than HTML you have to close thags like <br> -> <br />. a component also 
+cannot return multiple JSX tags. You have to use a shared parent like <div> or <> empty 
+
+Installation:
+
+npx create-next-app@latest
+
