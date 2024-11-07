@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ShowAllPollsComponent } from './show-all-polls/show-all-polls.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ShowAllPollsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

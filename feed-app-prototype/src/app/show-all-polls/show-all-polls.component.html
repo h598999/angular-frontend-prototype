@@ -1,0 +1,27 @@
+<!-- src/app/show-all-polls/show-all-polls.component.html -->
+<div *ngIf="isLoading">
+  <p>Loading polls...</p>
+</div>
+
+<div *ngIf="!isLoading && polls.length">
+  <ul>
+    <li *ngFor="let poll of polls">
+      {{ poll.question }}
+      <ul>
+        <li *ngFor="let option of poll.voteOptions">
+            {{ option.caption }}
+            {{ option.votes.length }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="!isLoading && !polls.length">
+  <p>No polls available.</p>
+</div>
+
+<div *ngIf="errorMessage">
+  <p class="error">{{ errorMessage }}</p>
+</div>
+
