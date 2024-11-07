@@ -12,6 +12,7 @@ app-product-alerts A component that contains the application's alerts
 
 
 Installation:
+
 Check you have a compatible version of node installed
 Install the latest angular version using npm install -g @angular/cli
 Configure your IDE to support angular for the best experience
@@ -23,5 +24,3 @@ Learned the basics of angular
 also doing the create components tutorial:
 ETA: 10 minutes
 ref: create-component-tutorial.txt
-
-
