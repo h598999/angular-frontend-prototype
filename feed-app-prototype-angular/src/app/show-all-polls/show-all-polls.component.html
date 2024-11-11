@@ -1,27 +1,29 @@
-<!-- src/app/show-all-polls/show-all-polls.component.html -->
-<div *ngIf="isLoading">
-  <p>Loading polls...</p>
-</div>
+<!-- polls.component.html -->
 
-<div *ngIf="!isLoading && polls.length">
-  <ul>
-    <li *ngFor="let poll of polls">
-      {{ poll.question }}
-      <ul>
-        <li *ngFor="let option of poll.voteOptions">
-            {{ option.caption }}
-            {{ option.votes.length }}
+<h1 *ngIf="polls.length > 0">Polls</h1>
+<div *ngIf="error" class="error">Error: {{ error }}</div>
+<div class="container">
+  <h1 *ngIf="polls.length === 0">No polls :(</h1>
+  <div *ngFor="let poll of polls" class="poll-card">
+    <div class="card-header">
+      <h2>{{ poll.question }}</h2>
+    </div>
+    <div class="card-content">
+      <ul class="vote-options">
+        <li *ngFor="let voteOption of poll.voteOptions" class="vote-option">
+          <div class="option-caption">{{ voteOption.caption }}</div>
+          <button
+            class="upvote-button"
+            (click)="handleVote(voteOption)">
+            Upvote
+          </button>
+          <div class="vote-count">Number of votes: {{ voteOption.votes.length }}</div>
         </li>
       </ul>
-    </li>
-  </ul>
-</div>
-
-<div *ngIf="!isLoading && !polls.length">
-  <p>No polls available.</p>
-</div>
-
-<div *ngIf="errorMessage">
-  <p class="error">{{ errorMessage }}</p>
+    </div>
+    <div class="card-footer">
+      <button class="delete-button" (click)="handleDeletePoll(poll.id)">Delete Poll</button>
+    </div>
+  </div>
 </div>
 

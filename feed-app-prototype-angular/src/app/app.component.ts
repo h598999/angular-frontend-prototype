@@ -9,5 +9,5 @@ import { ShowAllPollsComponent } from './show-all-polls/show-all-polls.component
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'feed-app-prototype';
+  title = 'feed-app-prototype-angular';
 }

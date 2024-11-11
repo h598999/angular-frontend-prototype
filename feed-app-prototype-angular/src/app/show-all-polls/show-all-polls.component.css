@@ -1,0 +1,103 @@
+/* polls.component.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.poll-card {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f5f5f5;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.expired {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vote-options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vote-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.vote-option:last-child {
+  border-bottom: none;
+}
+
+.option-caption {
+  flex: 1;
+}
+
+.upvote-button {
+  padding: 8px 16px;
+  margin: 0 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upvote-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.vote-count {
+  width: 150px;
+  text-align: right;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.card-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+  text-align: right;
+}
+
+.delete-button {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+

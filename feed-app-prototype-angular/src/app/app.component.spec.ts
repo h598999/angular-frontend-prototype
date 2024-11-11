@@ -14,10 +14,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'feed-app-prototype' title`, () => {
+  it(`should have the 'feed-app-prototype-angular' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('feed-app-prototype');
+    expect(app.title).toEqual('feed-app-prototype-angular');
   });
 
   it('should render title', () => {
