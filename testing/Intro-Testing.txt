@@ -1,0 +1,30 @@
+The pupeteer metrics api returns 13 different metrics but the most important are:
+
+ScriptDuration: The amount of time in milliseconds how much time the browser spen on javscript
+parsing and executing. If numbers here are really big this means yhat you have either alot
+of javascript on th epage or it runs very slowly. For low performance devices a huge amount of 
+javascript can be a huge disaster because parsing javascript uses alot of cpu.
+
+LayoutDuration: The amount of time in millisexonds how much time the browser spent on construction
+layout. If it starts rapidly growing, this signalizws that your markup is overcomplicated big.
+
+JSHeapUsedSize: The amount of memory in bytes the application is using. Again, this is important fort
+the cheap mobiles that have a little amount of memory. If you are targeting this audience this 
+metric is crucial for you.
+
+LayoutDuration: The amount of memory in bytes the application is using. Again, this is
+important for the cheap mobiles that have less memory. 
+
+First contentful paint. 
+
+The first contentful Paint is part of the Web Vitals performanve events and indicates when a user
+starts seeing any part og the content.
+
+Recommended value is 1.8 seconds. To get this metric we will use the browsers performance API
+
+
+
+Largest Contentful Paint measures loading performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.
+First Input Delay: measures interactivity. To provide a good user experience, pages should have an FID of less than 100 milliseconds.
+Cumulative Layout Shift: measures visual stability. To provide a good user experience, pages should maintain a CLS of less than 0.1.
+

@@ -1,0 +1,69 @@
+Successfully loaded './performance-angular.csv'.
+Successfully loaded './performance-react.csv'.
+Successfully loaded './performance-vue.csv'.
+
+Mean Values for 'Angular':
+CPU_LoadBefore_1min             5.2134
+CPU_LoadBefore_5min             3.5966
+CPU_LoadBefore_15min            2.9678
+MemoryBefore_RSS_MB           112.9220
+MemoryBefore_HeapTotal_MB      57.3650
+MemoryBefore_HeapUsed_MB       24.9536
+MemoryBefore_External_MB        2.8778
+CPU_LoadAfter_1min              5.4108
+CPU_LoadAfter_5min              3.6676
+CPU_LoadAfter_15min             2.9950
+MemoryAfter_RSS_MB            113.5520
+MemoryAfter_HeapTotal_MB       57.8600
+MemoryAfter_HeapUsed_MB        25.4242
+MemoryAfter_External_MB         2.8180
+FCP                           266.7000
+TTFB                           39.5000
+CLS                             0.0997
+LCP                           266.7000
+INP                            26.7520
+
+Mean Values for 'React':
+CPU_LoadBefore_1min              2.9540
+CPU_LoadBefore_5min              2.4054
+CPU_LoadBefore_15min             2.4662
+MemoryBefore_RSS_MB            111.9014
+MemoryBefore_HeapTotal_MB       55.8150
+MemoryBefore_HeapUsed_MB        24.8132
+MemoryBefore_External_MB         2.7680
+CPU_LoadAfter_1min               3.0484
+CPU_LoadAfter_5min               2.4508
+CPU_LoadAfter_15min              2.4802
+MemoryAfter_RSS_MB             112.5656
+MemoryAfter_HeapTotal_MB        56.2800
+MemoryAfter_HeapUsed_MB         24.5572
+MemoryAfter_External_MB          2.6560
+FCP                            259.2000 MS
+TTFB                            11.9000 MS
+CLS                              0.0635 SCORE
+LCP                            259.2000 MS
+INP                             35.2640 MS
+dtype: float64
+
+Mean Values for 'Vue':
+CPU_LoadBefore_1min              3.6526
+CPU_LoadBefore_5min              2.5036
+CPU_LoadBefore_15min             1.7106
+MemoryBefore_RSS_MB            111.5458
+MemoryBefore_HeapTotal_MB       56.5400
+MemoryBefore_HeapUsed_MB        24.6202
+MemoryBefore_External_MB         2.7368
+CPU_LoadAfter_1min               3.7652
+CPU_LoadAfter_5min               2.5778
+CPU_LoadAfter_15min              1.7464
+MemoryAfter_RSS_MB             112.1620
+MemoryAfter_HeapTotal_MB        57.0050
+MemoryAfter_HeapUsed_MB         24.7238
+MemoryAfter_External_MB          2.6332
+FCP                            158.5000
+TTFB                             9.3000
+CLS                              0.0635
+LCP                            158.5000
+INP                             31.5400
+
+dtype: float64
