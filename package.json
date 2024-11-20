@@ -1,8 +1,0 @@
-{
-  "optionalDependencies": {
-    "serve": "^14.2.4",
-    "start-server-and-test": "^2.0.8",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
-  }
-}
